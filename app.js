@@ -9,7 +9,7 @@ const router = require('./Routes/routes')
 //const port = '8500'
 
 const hostname =process.env.URL
-const port = process.env.PORT
+const port = process.env.PORT || 8500
 const db_connection = process.env.DB_URL
 
 const app=express()
