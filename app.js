@@ -28,7 +28,7 @@ app.use('/',router)
 //mongodb://127.0.0.1:27017/zomato
 mongoose.connect(db_connection)
 .then(client =>{
-    app.listen(port,hostname,()=>{
+    app.listen(port,()=>{
         console.log(`Server is running on ${hostname}:${port}`)
     })
 })
